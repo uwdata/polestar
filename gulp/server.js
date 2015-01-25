@@ -40,6 +40,7 @@ gulp.task('serve', ['watch'], function () {
     paths.tmp + '/serve/{app,components}/**/*.css',
     paths.src + '/{app,components}/**/*.js',
     paths.src + 'src/assets/images/**/*',
+    paths.src + 'src/assets/data/*',
     paths.tmp + '/serve/*.html',
     paths.tmp + '/serve/{app,components}/**/*.html',
     paths.src + '/{app,components}/**/*.html'
