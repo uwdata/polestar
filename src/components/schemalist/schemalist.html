@@ -11,7 +11,7 @@
          jqyoui-draggable="{placeholder: 'keep', onStart: 'fieldDragStart'}"
          data-jqyoui-options="{revert: 'invalid', helper: 'clone'}">
       <field-info field="field"></field-info>
-      <i class="fa fa-info-circle" tooltips ng-init="stats = Dataset.stats[field.name]" tooltip-size="small" tooltip-title="
+      <i ng-hide="field.name == '*'" class="fa fa-info-circle" tooltips ng-init="stats = Dataset.stats[field.name]" tooltip-size="small" tooltip-title="
         <div class='tooltip-content'>
           <strong>Name:</strong> {{field.name}}<br>
           <strong>Cardinality:</strong> {{stats.cardinality}}<br>
