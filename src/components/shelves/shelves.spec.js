@@ -3,9 +3,9 @@
 describe('Directive: shelves', function() {
 
   // load the directive's module
-  beforeEach(module('vleApp'));
+  beforeEach(module('vegalite-ui'));
 
-  beforeEach(module('vleApp', function($provide) {
+  beforeEach(module('vegalite-ui', function($provide) {
     $provide.constant('vl', vl); // vl is loaded by karma
   }));
 
@@ -13,7 +13,7 @@ describe('Directive: shelves', function() {
     scope,
     deferred;
 
-  beforeEach(module('vleApp', function($provide) {
+  beforeEach(module('vegalite-ui', function($provide) {
     // add Directive suffix to mock directives
     $provide.value('fieldDefEditorDirective', {});
     $provide.value('functionSelectDirective', {});

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('vleApp')
+angular.module('vegalite-ui')
   .directive('configurationEditor', function() {
     return {
       templateUrl: 'components/configurationeditor/configurationeditor.html',

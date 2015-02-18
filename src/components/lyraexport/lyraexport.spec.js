@@ -3,9 +3,9 @@
 describe('Directive: lyraExport', function() {
 
   // load the directive's module
-  beforeEach(module('vleApp'));
+  beforeEach(module('vegalite-ui'));
 
-  beforeEach(module('vleApp', function($provide) {
+  beforeEach(module('vegalite-ui', function($provide) {
     var mock = {
       vgSpec: {}
     };

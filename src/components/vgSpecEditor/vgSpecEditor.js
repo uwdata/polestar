@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('vleApp')
+angular.module('vegalite-ui')
   .directive('vgSpecEditor', function(Spec) {
     return {
       templateUrl: 'components/vgSpecEditor/vgSpecEditor.html',

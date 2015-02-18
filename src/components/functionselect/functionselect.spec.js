@@ -3,7 +3,7 @@
 describe('Directive: functionSelect', function() {
 
   // load the directive's module
-  beforeEach(module('vleApp'));
+  beforeEach(module('vegalite-ui'));
 
   var element,
     scope;

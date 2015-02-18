@@ -6,7 +6,7 @@
  * @description
  * # propertyEditor
  */
-angular.module('vleApp')
+angular.module('vegalite-ui')
   .directive('propertyEditor', function () {
     return {
       templateUrl: 'components/propertyeditor/propertyeditor.html',

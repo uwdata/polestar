@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('vleApp')
+angular.module('vegalite-ui')
   .filter('scaleType', function() {
     return function(input) {
       var scaleTypes = {

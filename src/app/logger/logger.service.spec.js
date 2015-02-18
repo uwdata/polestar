@@ -3,7 +3,7 @@
 describe('Service: Logger', function () {
 
   // load the service's module
-  beforeEach(module('vleApp'));
+  beforeEach(module('vegalite-ui'));
 
   // instantiate service
   var logger;

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('vleApp')
+angular.module('vegalite-ui')
   .directive('lyraExport', function() {
     return {
       template: '<a href="#" ng-click="export()">Export to lyra</a>',

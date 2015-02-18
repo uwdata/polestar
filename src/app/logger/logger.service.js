@@ -7,7 +7,7 @@
  * # logger
  * Service in the vegalite-ui.
  */
-angular.module('vleApp')
+angular.module('vegalite-ui')
   .service('Logger', function (localStorageService, consts) {
 
     var service = {};

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('vleApp')
+angular.module('vegalite-ui')
   .directive('functionSelect', function(_) {
     return {
       templateUrl: 'components/functionselect/functionselect.html',

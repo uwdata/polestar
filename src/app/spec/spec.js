@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc service
- * @name vleApp.Spec
+ * @name vegalite-ui.Spec
  * @description
  * # Spec
- * Service in the vleApp.
+ * Service in the vegalite-ui.
  */
-angular.module('vleApp')
+angular.module('vegalite-ui')
   .service('Spec', function(_, vl, tv4, Alerts, Config, Dataset) {
     var Spec = {
       /** @type {Object} verbose spec edited by the UI */
