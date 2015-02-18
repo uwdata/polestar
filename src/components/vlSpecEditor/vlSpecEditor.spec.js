@@ -2,9 +2,9 @@
 
 describe('Directive: vlSpecEditor', function() {
   // load the directive's module
-  beforeEach(module('vleApp'));
+  beforeEach(module('vegalite-ui'));
 
-  beforeEach(module('vleApp', function($provide) {
+  beforeEach(module('vegalite-ui', function($provide) {
     $provide.constant('vl', vl); // vl is loaded by karma
 
     // mock directive (trodrigues's answer in http://stackoverflow.com/questions/17533052)
@@ -16,7 +16,7 @@ describe('Directive: vlSpecEditor', function() {
   var element,
     scope;
 
-  beforeEach(module('vleApp', function($provide) {
+  beforeEach(module('vegalite-ui', function($provide) {
     var mock = {
       vlSpec: {},
       shorthand: 'point.'

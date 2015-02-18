@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('vleApp')
+angular.module('vegalite-ui')
   .directive('fieldDefEditor', function(Dataset, Logger, _, Tether) {
     return {
       templateUrl: 'components/fielddefeditor/fielddefeditor.html',

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('vleApp')
+angular.module('vegalite-ui')
   .directive('shelves', function() {
     return {
       templateUrl: 'components/shelves/shelves.html',

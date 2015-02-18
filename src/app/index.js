@@ -1,7 +1,7 @@
 'use strict';
 /* globals window */
 
-angular.module('vleApp', [
+angular.module('vegalite-ui', [
     'ngAnimate',
     'ngCookies',
     'ngSanitize',

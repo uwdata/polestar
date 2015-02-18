@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('vleApp')
+angular.module('vegalite-ui')
   .controller('MainCtrl', function($scope, $document, Spec, Dataset, Config, consts, Chronicle, Logger, Bookmarks) {
     $scope.Spec = Spec;
     $scope.Dataset = Dataset;
