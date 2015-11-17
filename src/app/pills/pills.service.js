@@ -8,7 +8,8 @@
  * Service in the polestar.
  */
 angular.module('polestar')
-  .service('Pills', function (vl, Spec, _, $window) {
+  .service('Pills', function (consts, vl, Spec, _, $window) {
+    var Type = vl.Type;
     var encSchemaProps = vl.schema.schema.properties.encoding.properties;
 
     function instantiate(encType) {
@@ -39,11 +40,11 @@ angular.module('polestar')
         if (pill.aggregate==='count') {
           pill = {};
           $window.alert('COUNT not supported here!');
-        } else if (type==='Q' && !pill.bin) {
+        } else if (type === Type.Quantitative && !pill.bin) {
           pill.aggregate = undefined;
           pill.bin = {maxbins: vl.schema.MAXBINS_DEFAULT};
-        } else if(type==='T' && !pill.timeUnit) {
-          pill.timeUnit = vl.schema.defaultTimeFn;
+        } else if(type === Type.Temporal && !pill.timeUnit) {
+          pill.timeUnit = consts.defaultTimeFn;
         }
       } else if (!pill.name) {
         // no name, it's actually the empty shelf that
